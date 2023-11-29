@@ -1,0 +1,9 @@
+{
+    "method": "PUT",
+    "path": "/products/:id",
+    "handler": "product.update",
+    "config": {
+      "policies": ["global::is-authenticated", "product::isProductOwner"]
+    }
+  }
+  
