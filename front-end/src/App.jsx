@@ -10,16 +10,14 @@ function App() {
   return (
     <>
       <Siteheader />
-      <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Loginform/>} />
-        </Routes>
-        <Routes>
-          <Route path="/dashboard" element={<Dashboard/>} />
-        </Routes>
-      </div>
-    </Router>
+        <div className="App">
+          <Router>
+            <Routes>
+              <Route path="/" element={<Loginform/>} />
+              <Route path="/dashboard" element={<Dashboard/>} />
+            </Routes>
+          </Router>
+        </div>
     </>
   )
 }
